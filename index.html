@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CODSOFT | Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="calculator" role="application" aria-label="Basic Calculator">
+      <!-- Display -->
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div class="previous" id="previous"></div>
+        <div class="current" id="current">0</div>
+      </div>
+
+      <!-- Buttons (CSS Grid) -->
+      <div class="keys" role="group" aria-label="Calculator keys">
+        <button type="button" class="btn action span-2" data-action="clear" aria-label="All Clear">AC</button>
+        <button type="button" class="btn action" data-action="delete" aria-label="Delete one">DEL</button>
+        <button type="button" class="btn operator" data-operator="÷" data-key="/" aria-label="Divide">÷</button>
+
+        <button type="button" class="btn digit" data-digit="7" data-key="7">7</button>
+        <button type="button" class="btn digit" data-digit="8" data-key="8">8</button>
+        <button type="button" class="btn digit" data-digit="9" data-key="9">9</button>
+        <button type="button" class="btn operator" data-operator="×" data-key="*">×</button>
+
+        <button type="button" class="btn digit" data-digit="4" data-key="4">4</button>
+        <button type="button" class="btn digit" data-digit="5" data-key="5">5</button>
+        <button type="button" class="btn digit" data-digit="6" data-key="6">6</button>
+        <button type="button" class="btn operator" data-operator="−" data-key="-">−</button>
+
+        <button type="button" class="btn digit" data-digit="1" data-key="1">1</button>
+        <button type="button" class="btn digit" data-digit="2" data-key="2">2</button>
+        <button type="button" class="btn digit" data-digit="3" data-key="3">3</button>
+        <button type="button" class="btn operator" data-operator="+" data-key="+">+</button>
+
+        <button type="button" class="btn digit span-2" data-digit="0" data-key="0">0</button>
+        <button type="button" class="btn decimal" data-decimal="." data-key=".">.</button>
+        <button type="button" class="btn equals" data-action="equals" aria-label="Equals" data-key="Enter">=</button>
+      </div>
+    </div>
+
+    <footer class="credit">
+      <span>#codsoft • Level 1 – Calculator</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
