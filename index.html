@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page | CODSOFT</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | CODSOFT</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ===== NAVBAR ===== -->
+  <!-- ===== HEADER ===== -->
   <header>
     <nav class="navbar">
-      <h1 class="logo">Myntra</h1>
+      <h1 class="logo">My Portfolio</h1>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <section class="hero">
+      <h2>Hi, I'm <span>Rishi Verma</span></h2>
+      <p>A passionate Web Developer</p>
+    </section>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h2>Welcome to My Landing Page</h2>
-      <p>Clean, modern, and responsive design built with HTML & CSS.</p>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-  </section>
-
-  <!-- ===== FEATURES ===== -->
-  <section id="features" class="features">
-    <h2>Features</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Fast</h3>
-        <p>Optimized for quick loading and smooth performance.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Responsive</h3>
-        <p>Looks great on desktop, tablet, and mobile devices.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Simple</h3>
-        <p>Easy to use, clean structure, and customizable.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      We are a team passionate about creating simple, elegant, and user-friendly
-      websites. Our goal is to help businesses and individuals showcase their
-      work online effectively.
-    </p>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="myphoto.jpg.jpg" alt="Rishi Verma" />
+      <p>
+        Hello! I’m a beginner web developer passionate about creating clean,
+        responsive, and user-friendly websites. 
+      </p>
+    </div>
   </section>
 
-  <!-- ===== CTA SECTION ===== -->
-  <section class="cta">
-    <h2>Ready to get started?</h2>
-    <a href="#contact" class="btn">Contact Us</a>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React (Basics)</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <p>A simple calculator built using HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>A responsive landing page with modern design and layout.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <a class="resume-btn" href="RishiVermaResume (2).pdf" download>Download Resume</a>
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5"></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your@email.com">rverma.8jan@gmail.com</a></p>
+    <p>Phone: +91 7596882744</p>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 Myntra. All Rights Reserved.</p>
+    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 </body>
 </html>
